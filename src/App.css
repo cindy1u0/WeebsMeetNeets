@@ -1,0 +1,38 @@
+.app {
+  background-color: #414653;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+   align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  text-align: center;
+}
+
+.app-logo {
+  height: 10vmin;
+}
+
+.app-header {
+  position: absolute;
+  top: 50px;
+  color: rgb(245, 120, 37);
+  white-space: pre-wrap;
+}
+
+.app-link {
+  position: absolute;
+  top: 20px;
+  left: 50px;
+  color: rgb(245, 120, 37);
+  text-decoration: none;
+}
+
+.app-link:visited {
+  text-decoration: none;
+}
+
+.app-link:hover {
+  color: rgb(226, 191, 74);
+  text-decoration: none;
+}
