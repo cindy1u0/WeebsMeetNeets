@@ -1,10 +1,9 @@
 import React, { Component } from "react";
 import './fetch.css';
-import { BrowserRouter as Router, Link } from "react-router-dom";
 import {
-  InputGroup, InputGroupAddon, InputGroupText, Input,
+  InputGroup, InputGroupAddon, Input,
   Container, Row, Col,
-  Card, CardImg, CardText, CardBody,
+  Card, CardImg, CardBody,
   CardTitle, CardSubtitle, Button
 } from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -29,16 +28,16 @@ export default class FetchRandomUser extends React.Component {
   };
 
   async componentDidMount() {
-    const url = "https://localhost:8000";
+    const url = "http://localhost:8000/users/";
     const response = await fetch(url);
     const info = await response.json();
     this.setState({
       data: info,
-      person: data[this.state.index],
-      avatar: data[this.state.index].fields.avatar,
-      id: data[this.state.index].pk,
-      name: info.data[this.state.index].fields.name,
-      about: info.data[this.state.index].fields.about,
+      person: info[this.state.index],
+      avatar: info[this.state.index].fields.avatar,
+      id: info[this.state.index].pk,
+      name: info[this.state.index].fields.name,
+      about: info[this.state.index].fields.about,
       loading: false
     });
   }
@@ -46,6 +45,8 @@ export default class FetchRandomUser extends React.Component {
   nextOne = () => {
     { console.log(this.state.index) }
     this.setState({ index: this.state.index + 1 })
+    if (this.state.index >= this.state.data.length) 
+      return;
     this.setState({ name: this.state.data[this.state.index].fields.name })
     this.setState({ avatar: this.state.data[this.state.index].fields.avatar })
     this.setState({ about: this.state.data[this.state.index].fields.about })
@@ -70,11 +71,11 @@ export default class FetchRandomUser extends React.Component {
           <Row>
             <Col>
               <Card className="card-style">
-                <a href={"https://kitsu.io/users/" + this.state.id}><CardImg top width="100%" src={this.state.avatar} alt="Card image cap" /></a>
+                <a href={"https://kitsu.io/users/" + this.state.id}><img className="img-style" src={this.state.avatar} alt="Card image cap" /></a>
                 <CardBody>
                   <CardTitle>Name: {this.state.name}</CardTitle>
                   <CardSubtitle>About: {this.state.about}</CardSubtitle>
-                  <div><Button color="success" onClick={this.toggleDiv}>about</Button>{' '}<Button color="danger" onClick={this.nextOne}>Laifu</Button></div>
+                  <div><Button color="success" onClick={this.toggleDiv}>Waifu</Button>{' '}<Button color="danger" onClick={this.nextOne}>Laifu</Button></div>
                 </CardBody>
               </Card>
             </Col>
