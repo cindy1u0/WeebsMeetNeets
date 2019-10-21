@@ -1,6 +1,6 @@
 ### WeebsMeetNeets
 At Hackharvard 2019, in order to bring all the anime fans together and encourage people to pay more attention to the people who are so passionate about Japanese culture but are afraid to share with others, our team built an application for people to communicate online.
-[application](start.png)
+![start.png]
 
 **Note: 
 According Urban dictionary:
@@ -36,7 +36,5 @@ As we created the application, we learned React at the spot. Not only did we lea
 Create a map of all weebs and NEETs around the world; App that allows people to watch anime together; Helping weebs find Facebook, Discord groups about anime so they can find a sense of belonging. 
 
 ## Contributors
-(Amy Ying)[https://github.com/amywhying], (Cindy Luo)[https://github.com/cindy1u0], (Delong Xiao)[https://github.com/dlworldpeace], and (Ray Li)[https://github.com/RayRuizheLi]
-
-HackHarvard 2019
+[Amy Ying](https://github.com/amywhying), [Cindy Luo](https://github.com/cindy1u0), [Delong Xiao](https://github.com/dlworldpeace), and [Ray Li](https://github.com/RayRuizheLi)
 
