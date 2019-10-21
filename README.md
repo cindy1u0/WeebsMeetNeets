@@ -1,4 +1,4 @@
-### WeebsMeetNeets
+# WeebsMeetNeets
 At Hackharvard 2019, in order to bring all the anime fans together and encourage people to pay more attention to the people who are so passionate about Japanese culture but are afraid to share with others, our team built an application for people to communicate online.
 ![application](start.png)
 
@@ -23,11 +23,11 @@ WARNING: at WeebsMeetNeets, we prohibit users from trash talking other people's 
 ## How we built it
 We built it with our passion for anime.
 
-# Front end:
+### Front end:
 We utitlized React to build the user interface of the application, using Kitsu API to access anime-related data.
 ![front end](user.png)
 
-# Back End:
+### Back End:
 Using Django Web framwork in Python and SQLite for database, we created a local host that directly provides data to front end.
 ![kitsu](api.png)
 
