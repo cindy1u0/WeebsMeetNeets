@@ -39,5 +39,4 @@ Create a map of all weebs and NEETs around the world; App that allows people to 
 
 ## Contributors
 [Amy Ying](https://github.com/amywhying), [Cindy Luo](https://github.com/cindy1u0), [Delong Xiao](https://github.com/dlworldpeace), and [Ray Li](https://github.com/RayRuizheLi)
-![group picture](group.jpg)
 
