@@ -29,7 +29,7 @@ We utitlized React to build the user interface of the application, using Kitsu A
 
 # Back End:
 Using Django Web framwork in Python and SQLite for database, we created a local host that directly provides data to front end.
-![kitsu](Kitsu API.png)
+![kitsu](api.png)
 
 ## Challenges we ran into/What we learned
 As we created the application, we learned React at the spot. Not only did we learn how to intergrate front end and back end with the API data but also did we learn how to design a website using UI packages.
@@ -39,4 +39,5 @@ Create a map of all weebs and NEETs around the world; App that allows people to 
 
 ## Contributors
 [Amy Ying](https://github.com/amywhying), [Cindy Luo](https://github.com/cindy1u0), [Delong Xiao](https://github.com/dlworldpeace), and [Ray Li](https://github.com/RayRuizheLi)
+![group picture](group.jpg)
 
